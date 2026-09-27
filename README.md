@@ -1,4 +1,4 @@
-# Application
-An [egui](https://github.com/emilk/egui) template application with support for custon fonts, icons and gui settings.
+# Particles Math Art
+An [egui](https://github.com/emilk/egui) visualization of particles forming amoeba like shapes. Original idea from https://x.com/yuruyurau/status/2100230050063024467.
 
 > **DISCLAIMER**: this application is a hobby project and should be used as such. Any other use it at your own risk. It is provided as-is and is not likely to be maintained regularly.
