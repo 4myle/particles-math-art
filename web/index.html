@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Particles Math Art</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #111;
+        }
+        #the_canvas_id {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+<link rel="modulepreload" href="/particles-math-art-898f80aaedc4d304.js" crossorigin="anonymous" integrity="sha384-5JrJfUWB9/NVdeTW9ZgDsA+j/vtnQB3F3xzbpqXw5Lupqee6aGIZP5JI2CtEl5OP"><link rel="preload" href="/particles-math-art-898f80aaedc4d304_bg.wasm" crossorigin="anonymous" integrity="sha384-GE6Vhbcm4KETzOhnF7ZqVP9Ejs4fU3aqxfZnNqYASL2JjA1eMzDduDKNlM+R/jKp" as="fetch" type="application/wasm"></head>
+ <body>
+    <canvas id="the_canvas_id"></canvas>
+
+<script type="module">
+import init, * as bindings from '/particles-math-art-898f80aaedc4d304.js';
+const wasm = await init({ module_or_path: '/particles-math-art-898f80aaedc4d304_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>

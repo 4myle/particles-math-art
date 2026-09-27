@@ -1,0 +1,15 @@
+[build]
+target = "index.html"
+dist = "target/web"
+
+[serve]
+port = 8080
+
+[clean]
+when = "on_success"
+
+[profile.release]
+opt-level = "s"      # "s" or "z" produces the smallest WASM binary file footprints
+lto = true           # Link-Time Optimization strips unused framework sub-routines
+codegen-units = 1    # Reduces compilation speed to guarantee tighter compression boundaries
+panic = "abort"      # Strips overhead from panic unwinding allocations
